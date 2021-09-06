@@ -10,10 +10,14 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+-include Core/user_driver/volt_detect/subdir.mk
+-include Core/user_driver/sht20/subdir.mk
 -include Core/user_driver/shell/subdir.mk
 -include Core/user_driver/rotary/subdir.mk
 -include Core/user_driver/peripheral/subdir.mk
+-include Core/user_driver/lora_com/subdir.mk
 -include Core/user_driver/control_output/subdir.mk
+-include Core/user_driver/charger_status/subdir.mk
 -include Core/user_driver/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk

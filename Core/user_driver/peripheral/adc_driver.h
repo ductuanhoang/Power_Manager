@@ -7,8 +7,8 @@
 #include "string.h"
 #include "main.h"
 
-#define ADC_SAMPLE_COUNT            (5)
-#define ADC_CHANNEL_COUNT           (4)//(8)
+#define ADC_SAMPLE_COUNT            (4)
+#define ADC_CHANNEL_COUNT           (5)//(8)
 
 // #define PRESSURE_PROXIMAL_IDX       (0)
 // #define PRESSURE_INTERNAL_IDX       (1)
@@ -27,5 +27,6 @@ void adc_start_process(void);
 
 uint16_t* adc_get_sample(void);
 
-
+void adc_init(void);
+uint16_t adc_read_func(void);
 #endif /* ADC_DRIVER_H_ */

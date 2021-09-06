@@ -16,8 +16,8 @@ extern UART_HandleTypeDef huart5;
 
 #define UART_COM huart5
 
-extern fifo_t com_fifo;
-extern uint8_t com_rx_buffer[128];
+//extern fifo_t com_fifo;
+//extern uint8_t com_rx_buffer[128];
 
 static uint8_t u8RxByte2 = 0;
 
@@ -53,31 +53,31 @@ void user_uart_init(void)
 //		Error_Handler();
 	}
 	/* USER CODE BEGIN USART1_Init 2 */
-	user_coom_init();
+//	user_coom_init();
 	// register call back
 
 	/* USER CODE END USART1_Init 2 */
 }
 
-static void user_coom_init(void)
-{
-	fifo_create(
-		&com_fifo,
-		com_rx_buffer,
-		sizeof(com_rx_buffer) / sizeof(uint8_t),
-		sizeof(uint8_t));
-	/* Infinite loop */
-	HAL_UART_Receive_IT(&UART_COM, (uint8_t *)&u8RxByte2, 1);
-}
+//static void user_coom_init(void)
+//{
+//	fifo_create(
+//		&com_fifo,
+//		com_rx_buffer,
+//		sizeof(com_rx_buffer) / sizeof(uint8_t),
+//		sizeof(uint8_t));
+//	/* Infinite loop */
+//	HAL_UART_Receive_IT(&UART_COM, (uint8_t *)&u8RxByte2, 1);
+//}
 
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-{
-	if (huart == &UART_COM)
-	{
-		fifo_add(&com_fifo, &u8RxByte2);
-		HAL_UART_Receive_IT(&UART_COM, &u8RxByte2, 1);
-	}
-}
+//void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+//{
+//	if (huart == &UART_COM)
+//	{
+//		fifo_add(&com_fifo, &u8RxByte2);
+//		HAL_UART_Receive_IT(&UART_COM, &u8RxByte2, 1);
+//	}
+//}
 
 /**
 * Xoa ham khoi tao uart.

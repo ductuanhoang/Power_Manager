@@ -10,5 +10,6 @@
 
 void user_driver_init(void);
 void user_driver_process(void); // call in loop
+void user_pripheral_init(void);
 
 #endif /* USER_DRIVER_USER_PROCESS_H_ */

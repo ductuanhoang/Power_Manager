@@ -28,7 +28,7 @@
 ***********************************************************************************************************************/
 void User_Power_On(void)
 {
-	HAL_GPIO_WritePin(POWER_CTRL_GPIO_Port, POWER_CTRL_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(POWER_CTRL_GPIO_Port, POWER_CTRL_Pin, GPIO_PIN_SET);
 }
 /***********************************************************************************************************************
 * Function Name:  vsm_protocol_cmd_handler
@@ -38,7 +38,7 @@ void User_Power_On(void)
 ***********************************************************************************************************************/
 void User_Power_Off(void)
 {
-	HAL_GPIO_WritePin(POWER_CTRL_GPIO_Port, POWER_CTRL_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(POWER_CTRL_GPIO_Port, POWER_CTRL_Pin, GPIO_PIN_RESET);
 }
 /***********************************************************************************************************************
 * Function Name:  vsm_protocol_cmd_handler
@@ -48,7 +48,7 @@ void User_Power_Off(void)
 ***********************************************************************************************************************/
 void User_Heating_On(void)
 {
-	HAL_GPIO_WritePin(HEATING_CTRL_GPIO_Port, HEATING_CTRL_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(HEATING_CTRL_GPIO_Port, HEATING_CTRL_Pin, GPIO_PIN_SET);
 }
 
 /***********************************************************************************************************************
@@ -59,7 +59,7 @@ void User_Heating_On(void)
 ***********************************************************************************************************************/
 void User_Heating_Off(void)
 {
-	HAL_GPIO_WritePin(HEATING_CTRL_GPIO_Port, HEATING_CTRL_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(HEATING_CTRL_GPIO_Port, HEATING_CTRL_Pin, GPIO_PIN_RESET);
 }
 /***********************************************************************************************************************
 * Function Name:  vsm_protocol_cmd_handler
@@ -69,12 +69,12 @@ void User_Heating_Off(void)
 ***********************************************************************************************************************/
 void User_Fan_On(void)
 {
-	HAL_GPIO_WritePin(FAN_CTRL_GPIO_Port, FAN_CTRL_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(FAN_CTRL_GPIO_Port, FAN_CTRL_Pin, GPIO_PIN_SET);
 }
 
 void User_Fan_Off(void)
 {
-	HAL_GPIO_WritePin(FAN_CTRL_GPIO_Port, FAN_CTRL_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(FAN_CTRL_GPIO_Port, FAN_CTRL_Pin, GPIO_PIN_RESET);
 }
 /***********************************************************************************************************************
 * Static Functions

@@ -33,7 +33,7 @@ extern TIM_HandleTypeDef htim7;
 ***********************************************************************************************************************/
 void user_timer_1s_start(void)
 {
-	HAL_TIM_Base_Start(&htim6);
+	HAL_TIM_Base_Start_IT(&htim6);
 }
 
 uint32_t user_timer_1s_get_tick(void)
@@ -49,7 +49,7 @@ uint32_t user_timer_1s_get_tick(void)
 ***********************************************************************************************************************/
 void user_timer_1ms_start(void)
 {
-	HAL_TIM_Base_Start(&htim7);
+	HAL_TIM_Base_Start_IT(&htim7);
 }
 
 uint32_t user_timer_1ms_get_tick(void)

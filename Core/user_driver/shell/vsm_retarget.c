@@ -30,7 +30,7 @@
 /************************** Constant Definitions *****************************/
 
 /**************************** Type Definitions *******************************/
-extern UART_HandleTypeDef huart2;
+extern UART_HandleTypeDef huart5;
 /***************** Macros (Inline Functions) Definitions *********************/
 
 /********************** Internal Function Prototypes *************************/
@@ -53,15 +53,15 @@ uint8_t cli_rx_byte = 0;
  *
  * @return     { description_of_the_return_value }
  */
-int retarget_init_fifo(void) {
-  fifo_create(
-                    &shell_fifo,
-                    shell_rx_buffer,
-                    sizeof(shell_rx_buffer)/sizeof(uint8_t),
-                    sizeof(uint8_t)
-                  );
-  HAL_UART_Receive_IT(&huart2, (uint8_t *)&cli_rx_byte, 1);
-  return 0;
+int retarget_init_fifo(void)
+{
+    fifo_create(
+        &shell_fifo,
+        shell_rx_buffer,
+        sizeof(shell_rx_buffer) / sizeof(uint8_t),
+        sizeof(uint8_t));
+    HAL_UART_Receive_IT(&huart5, (uint8_t *)&cli_rx_byte, 1);
+    return 0;
 }
 
 /**
@@ -71,19 +71,21 @@ int retarget_init_fifo(void) {
  *
  * @return     { description_of_the_return_value }
  */
-int serial_get_char(uint8_t *c) {
-  if(fifo_is_empty(&shell_fifo) == true) return 0;
+int serial_get_char(uint8_t *c)
+{
+    if (fifo_is_empty(&shell_fifo) == true)
+        return 0;
 
-  uint8_t item = 0;
+    uint8_t item = 0;
 
-  if(fifo_get(&shell_fifo, &item) == true) {
-    *c = item;
-    return 1;
-  }
+    if (fifo_get(&shell_fifo, &item) == true)
+    {
+        *c = item;
+        return 1;
+    }
 
-  return 0;
+    return 0;
 }
-
 
 /***********************************************************************************************************************
 * Function Name:
@@ -95,33 +97,26 @@ int serial_get_char(uint8_t *c) {
 //debug printf
 int uart_debug_printf(const char *Format, ...)
 {
-	uint8_t buff[512 + 1] = {0};
-	va_list args;
-	va_start(args, Format);
-	uint16_t len = vsprintf((char*)buff, Format, args);
-    HAL_UART_Transmit(&huart2, (uint8_t *)buff, len, 100);
-	va_end(args);
-	return -1;
+    uint8_t buff[512 + 1] = {0};
+    va_list args;
+    va_start(args, Format);
+    uint16_t len = vsprintf((char *)buff, Format, args);
+    HAL_UART_Transmit(&huart5, (uint8_t *)buff, len, 100);
+    va_end(args);
+    return -1;
 }
 
-
-long user_putchar(const char * str)
+long user_putchar(const char *str)
 {
-//    HAL_StatusTypeDef status;
-//    status = 
-    HAL_UART_Transmit(&huart2, (uint8_t *)str, 1, 100);
-//    return (status ? HAL_OK : 1, 0);
+    HAL_UART_Transmit(&huart5, (uint8_t *)str, 1, 100);
     return 0;
 }
 
-
-long user_getchar (void)
+long user_getchar(void)
 {
-  int ch = 0;
-  return (serial_get_char((uint8_t*)&ch) == 1) ? ch : 0;
+    int ch = 0;
+    return (serial_get_char((uint8_t *)&ch) == 1) ? ch : 0;
 }
-
-
 
 /********************* Internal Function Definitions *************************/
 

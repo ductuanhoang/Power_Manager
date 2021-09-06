@@ -22,10 +22,14 @@ OBJCOPY_BIN :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
+Core/user_driver/charger_status \
 Core/user_driver/control_output \
+Core/user_driver/lora_com \
 Core/user_driver/peripheral \
 Core/user_driver/rotary \
 Core/user_driver/shell \
+Core/user_driver/sht20 \
 Core/user_driver \
+Core/user_driver/volt_detect \
 Drivers/STM32L0xx_HAL_Driver/Src \
 
