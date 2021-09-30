@@ -22,6 +22,7 @@
 ***********************************************************************************************************************/
 extern I2C_HandleTypeDef hi2c1;
 extern I2C_HandleTypeDef hi2c2;
+#define USER_VOLT_USE 12 //12 volt
 /***********************************************************************************************************************
 * static Functions
 ***********************************************************************************************************************/
@@ -127,11 +128,11 @@ static void user_process(void)
 static void user_set_switch_state(void)
 {
 	// check mode process
-	if (device_state.dc_volt.dc_1_in_volt < (12 * 1000 - 0.5 * 1000))
+	if (device_state.dc_volt.dc_1_in_volt < (USER_VOLT_USE * 1000 - 0.5 * 1000))
 	{
 		device_state.mode = E_SAVE_MODE;
 	}
-	else if (device_state.dc_volt.dc_1_in_volt > (12 * 1000 + 0.5 * 1000))
+	else if (device_state.dc_volt.dc_1_in_volt > (USER_VOLT_USE * 1000 + 0.5 * 1000))
 	{
 		device_state.mode = E_NORMAL_MODE;
 	}
