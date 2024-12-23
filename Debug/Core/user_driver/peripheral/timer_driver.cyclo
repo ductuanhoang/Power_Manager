@@ -1,0 +1,4 @@
+../Core/user_driver/peripheral/timer_driver.c:34:6:user_timer_1s_start	1
+../Core/user_driver/peripheral/timer_driver.c:39:10:user_timer_1s_get_tick	1
+../Core/user_driver/peripheral/timer_driver.c:50:6:user_timer_1ms_start	1
+../Core/user_driver/peripheral/timer_driver.c:55:10:user_timer_1ms_get_tick	1

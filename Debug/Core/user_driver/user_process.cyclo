@@ -1,0 +1,12 @@
+../Core/user_driver/user_process.c:42:6:user_pripheral_init	1
+../Core/user_driver/user_process.c:55:6:user_driver_init	1
+../Core/user_driver/user_process.c:67:6:user_driver_process	1
+../Core/user_driver/user_process.c:73:13:user_process	8
+../Core/user_driver/user_process.c:128:13:user_set_switch_state	7
+../Core/user_driver/user_process.c:190:13:user_power_switch_set_state	17
+../Core/user_driver/user_process.c:263:13:user_clear_power_change_state	1
+../Core/user_driver/user_process.c:274:13:user_set_switch_control	7
+../Core/user_driver/user_process.c:297:13:user_set_led_status	3
+../Core/user_driver/user_process.c:318:13:user_get_tem_pcb_start	1
+../Core/user_driver/user_process.c:333:13:user_sht20_test	1
+../Core/user_driver/user_process.c:358:6:charger_get_state	1

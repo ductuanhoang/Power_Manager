@@ -1,0 +1,3 @@
+../Core/user_driver/peripheral/uart_com.c:32:6:user_uart_init	1
+../Core/user_driver/peripheral/uart_com.c:88:6:user_uart_deinit	1
+../Core/user_driver/peripheral/uart_com.c:93:6:uart_trasmit	1

@@ -1,0 +1,2 @@
+../Core/user_driver/rotary/rotary_driver.c:58:6:roatary_time_get_value	22
+../Core/user_driver/rotary/rotary_driver.c:187:16:rotary_detect	5

@@ -1,0 +1,5 @@
+../Core/user_driver/lora_com/lora_com.c:47:6:lora_com_init	1
+../Core/user_driver/lora_com/lora_com.c:52:6:lora_com_send_interval	4
+../Core/user_driver/lora_com/lora_com.c:78:6:lora_hanlder_loop	8
+../Core/user_driver/lora_com/lora_com.c:121:13:device_send_report	1
+../Core/user_driver/lora_com/lora_com.c:141:13:lora_packet_message	2

@@ -1,0 +1,5 @@
+../Core/user_driver/shell/app_cli.c:43:5:user_put_char	1
+../Core/user_driver/shell/app_cli.c:48:5:user_get_char	1
+../Core/user_driver/shell/app_cli.c:55:6:vsm_cli_start	2
+../Core/user_driver/shell/app_cli.c:70:6:vsm_cli_main_loop	1
+../Core/user_driver/shell/app_cli.c:76:16:cli_reset_system	1

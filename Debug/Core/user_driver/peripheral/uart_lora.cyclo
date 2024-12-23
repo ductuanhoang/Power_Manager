@@ -1,0 +1,5 @@
+../Core/user_driver/peripheral/uart_lora.c:32:6:user_lora_uart_init	1
+../Core/user_driver/peripheral/uart_lora.c:62:14:user_lora_com_init	1
+../Core/user_driver/peripheral/uart_lora.c:73:6:HAL_UART_RxCpltCallback	2
+../Core/user_driver/peripheral/uart_lora.c:88:7:user_lora_uart_deinit	1
+../Core/user_driver/peripheral/uart_lora.c:93:7:user_lora_trasmit	1

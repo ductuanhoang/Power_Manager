@@ -1,0 +1,6 @@
+../Core/user_driver/control_output/user_lec.c:30:6:User_Led_Green_On	1
+../Core/user_driver/control_output/user_lec.c:40:6:User_Led_Green_Off	1
+../Core/user_driver/control_output/user_lec.c:50:6:User_Led_Red_On	1
+../Core/user_driver/control_output/user_lec.c:61:6:User_Led_Red_Off	1
+../Core/user_driver/control_output/user_lec.c:71:6:User_Led_Blue_On	1
+../Core/user_driver/control_output/user_lec.c:76:6:User_Led_Blue_Off	1

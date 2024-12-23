@@ -1,0 +1,6 @@
+../Core/user_driver/control_output/user_control.c:29:6:User_Power_On	1
+../Core/user_driver/control_output/user_control.c:39:6:User_Power_Off	1
+../Core/user_driver/control_output/user_control.c:49:6:User_Heating_On	1
+../Core/user_driver/control_output/user_control.c:60:6:User_Heating_Off	1
+../Core/user_driver/control_output/user_control.c:70:6:User_Fan_On	1
+../Core/user_driver/control_output/user_control.c:75:6:User_Fan_Off	1

@@ -1,0 +1,5 @@
+../Core/user_driver/peripheral/adc_driver.c:23:6:adc_init	1
+../Core/user_driver/peripheral/adc_driver.c:30:10:adc_read_func	1
+../Core/user_driver/peripheral/adc_driver.c:49:6:HAL_ADC_ConvCpltCallback	2
+../Core/user_driver/peripheral/adc_driver.c:75:6:adc_start_process	1
+../Core/user_driver/peripheral/adc_driver.c:86:11:adc_get_sample	1

@@ -1,0 +1,12 @@
+../Core/user_driver/sht20/sht2x_for_stm32_hal.c:16:6:SHT2x_Init	1
+../Core/user_driver/sht20/sht2x_for_stm32_hal.c:23:6:SHT2x_SoftReset	1
+../Core/user_driver/sht20/sht2x_for_stm32_hal.c:32:9:SHT2x_ReadUserReg	2
+../Core/user_driver/sht20/sht2x_for_stm32_hal.c:48:10:SHT2x_GetRaw	2
+../Core/user_driver/sht20/sht2x_for_stm32_hal.c:63:7:SHT2x_GetTemperature	2
+../Core/user_driver/sht20/sht2x_for_stm32_hal.c:73:7:SHT2x_GetRelativeHumidity	2
+../Core/user_driver/sht20/sht2x_for_stm32_hal.c:84:6:SHT2x_SetResolution	1
+../Core/user_driver/sht20/sht2x_for_stm32_hal.c:96:7:SHT2x_CelsiusToFahrenheit	1
+../Core/user_driver/sht20/sht2x_for_stm32_hal.c:105:7:SHT2x_CelsiusToKelvin	1
+../Core/user_driver/sht20/sht2x_for_stm32_hal.c:115:9:SHT2x_GetInteger	1
+../Core/user_driver/sht20/sht2x_for_stm32_hal.c:125:10:SHT2x_GetDecimal	1
+../Core/user_driver/sht20/sht2x_for_stm32_hal.c:136:10:SHT2x_Ipow	2

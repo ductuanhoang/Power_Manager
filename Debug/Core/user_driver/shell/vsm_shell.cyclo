@@ -1,0 +1,12 @@
+../Core/user_driver/shell/vsm_shell.c:114:6:SHELL_Init	1
+../Core/user_driver/shell/vsm_shell.c:134:6:SHELL_Process	35
+../Core/user_driver/shell/vsm_shell.c:329:16:HelpCommand	2
+../Core/user_driver/shell/vsm_shell.c:348:13:ProcessCommand	17
+../Core/user_driver/shell/vsm_shell.c:432:13:GetHistoryCommand	5
+../Core/user_driver/shell/vsm_shell.c:463:13:AutoComplete	9
+../Core/user_driver/shell/vsm_shell.c:521:14:StrCopy	2
+../Core/user_driver/shell/vsm_shell.c:534:16:StrLen	2
+../Core/user_driver/shell/vsm_shell.c:546:16:StrCompare	3
+../Core/user_driver/shell/vsm_shell.c:558:16:ParseLine	10
+../Core/user_driver/shell/vsm_shell.c:613:9:SHELL_RegisterCommand	2
+../Core/user_driver/shell/vsm_shell.c:629:16:GetChar	1
